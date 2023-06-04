@@ -86,10 +86,10 @@ def unos_telefona(poruka):
         else:
             return broj
 
-def provjera_korisnickog_unos(telefon, email, ime_ili_naziv, prezime_ili_web):
+def provjera_korisnickog_unos(telefon, email, ime_ili_naziv, prezime_ili_web, drzavljanstvo_ili_oib):
     while True:
         try:
-            if len(telefon) == 0 or len(email) == 0 or len(ime_ili_naziv) == 0 or len(prezime_ili_web) == 0:
+            if len(telefon) == 0 or len(email) == 0 or len(ime_ili_naziv) == 0 or len(prezime_ili_web) == 0 or len(drzavljanstvo_ili_oib) == 0:
                 raise IznimkaPrazanTekst()
             elif len(str(telefon)) != 8:
                 raise IznimkaTelefon()

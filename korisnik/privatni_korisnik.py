@@ -8,6 +8,7 @@ class PrivatniKorisnik(Korisnik):
         self.__prezime = prezime
         self.drzavljanstvo = drzavljanstvo
 
+
     @property
     def ime(self):
         return self.__ime

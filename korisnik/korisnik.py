@@ -5,6 +5,8 @@ class Korisnik(ABC):
         self._email = email
         self._telefon = telefon
 
+
+
     @property
     def email(self):
         return self._email
@@ -12,6 +14,8 @@ class Korisnik(ABC):
     @property
     def telefon(self):
         return self._telefon
+
+
 
     @abstractmethod
     def ispis(self):
